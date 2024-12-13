@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">ImageLabelApp</string>
+    <string name="app_name">Image Label App</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="captured_image">Captured Image</string>
+    <string name="permission_required">Camera permission is required to capture images.</string>
+    <string name="capture_error">Unable to capture image. Please try again.</string>
+    <string name="label_error">Error: %1$s</string>
+    <string name="no_labels_found">No labels found</string>
 </resources>

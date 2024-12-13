@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,23 +9,22 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/objectImage"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:id="@+id/objectImage"
         android:scaleType="centerCrop"
         android:layout_marginTop="16dp"
         android:src="@drawable/baseline_image_24"
-        android:contentDescription="Captured Image"/>
+        android:contentDescription="@string/captured_image" />
 
     <Button
+        android:id="@+id/captureImgBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/captureImgBtn"
-        android:text="Capture Image"
+        android:text="@string/capture_image"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/blue"
-        android:layout_gravity="center"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/labelText"
@@ -34,9 +32,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"
-        android:fontFamily="@font/poppins"
         android:textColor="@color/blue"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Labels will appear here" />
 
 </LinearLayout>
